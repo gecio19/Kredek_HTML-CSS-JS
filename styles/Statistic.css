@@ -1,0 +1,48 @@
+
+
+.nav-link
+{
+    background-color: rgb(11, 11, 11);
+    min-height: 5vh;
+    text-align: center;
+    
+}
+
+.nav-link a
+{
+    margin: 100px;
+    color:aliceblue;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.mainbody
+{
+    text-align: center;
+    
+
+}
+
+#Jokes
+{
+    background-color: rgb(161, 199, 46);
+    position: absolute;
+    right: 250px;
+    top: 250px;
+    width: 500px;
+    height: 300px;
+    min-height: 2vh;
+    border-radius: 20%;
+}
+#Jokes h1
+{
+    text-align: center;
+    color: white;
+
+}
+
+#Jokes div
+{
+    text-align: center;
+    font-size: 20px;
+}

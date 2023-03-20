@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistic</title>
+    <link rel="stylesheet" href="../styles/Statistic.css">
+    <script src="../scripts/Statistic.js"></script>
+</head>
+<body onload="autorefresh()">
+    <div class="nav-link">
+        <a class="links" href="Start.html">Home</a>
+        <a class="links1"  href="Api.html">Api</a>
+    </div>
+
+    <div class="mainbody">
+        <h1>Statistic</h1>
+    </div>
+
+    <div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <script>
+            var xValues = ["Wykonane"];
+            var yValues = [];
+
+            var doneexercises = 0;
+            let cookie = document.cookie.split(';');
+        
+
+            cookie.forEach(element => {
+
+              //  console.log(element.split('=')[1]);
+
+                if(element.split('=')[1] === "1")
+                {
+                    doneexercises += 1;
+                }
+                console.log(doneexercises);
+
+            });
+            yValues[0] = doneexercises;
+            var barColors = ["red"];
+            new Chart("myChart", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                title: {
+                  display: true,
+                  text: "Postep"
+                }
+              }
+            });
+            </script>
+
+    </div>
+
+
+
+    <div id="Jokes" >
+        <h1>Joke</h1>
+    
+        <div id="jokearea">
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+.bodyHead
+{
+    background-image: url('../resources/bH.jpg');
+    background-size: cover; /* ustawia rozmiar do tła */
+    min-height: 100vh;
+    position: relative;
+    display: block;
+}
+.myImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.over-bH
+{
+    display: block;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+
+.bodyNeck{
+    background-image: url('../resources/nbH.jpg');
+    background-size: cover;
+    min-height: 60vh;
+}
+
+.bN_List{
+    color: aliceblue;
+    position: relative;
+    margin-left: 60%;
+    margin-top: 5%;
+    font-size: 2rem;
+}
+.bn_img
+{
+    position: absolute;
+    width: 700px;
+    margin-left: 15%;
+}
+
+.bodyEnd
+{
+    background-image: url('../resources/colorkit.png');
+    background-size: cover; /* ustawia rozmiar do tła */
+    min-height: 40vh;
+
+}
+
+.links
+{
+    position: absolute;
+    font-size: 2rem;
+    color: aliceblue;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+.links1
+{
+    position: absolute;
+    font-size: 2rem;
+    color: aliceblue;
+    margin-top: 10%;
+    margin-left: 57%;
+}
+.links2
+{
+    position: absolute;
+    color: aliceblue;
+    margin-top: 10%;
+    margin-left: 68%;
+}
+
+
+#menuIcon
+{
+    width: 70px;
+    border-radius: 50%;
+    position: fixed;
+    top:40px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 120;
+}
+
+.menu-box
+{
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 15%;
+    right: 15%;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+
+    border-radius: 30%;
+    background-image: linear-gradient(#f9f047, #0fd850);
+    opacity: 80%;
+}
+
+.menu-box.open-menu
+{
+    width: 20%;
+    height: 20vh;
+}
+
+.menu-box ul li {
+    margin: 10px;
+}
+
+.menu-box ul li a {
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    text-shadow: 0px 0px 0 red;
+    transition: text-shadow 0.5s , transform 0.5s;
+}
+
+.menu-box ul li a:hover{
+    text-shadow: -3px 3px 0 red;
+    transform: translateY(-12px);
+    opacity: 100%;
+
+}
